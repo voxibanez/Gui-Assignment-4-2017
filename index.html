@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Name: Tim Barber, Timothy_Barber@student.uml.edu
+Computer Science Department, UMass Lowell Comp.4610, GUI Programming I
+File: /usr/cs/undergrad/2018/tbarber/public_html/Assignment4/index.html Created: 23-oct-2017
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="CSS/Default.css" />
+  <title>Car Comparor</title>
+</head>
+
+<body>
+  <p style="text-align: center;font-size:150%;background: linear-gradient(white, grey); border-radius: 50px;"> Tim's Car Calculator </p>
+  <!--Form to enter table paremeters-->
+  <div id=TableEntry>
+    <form name="tableForm" onsubmit="return validateForm()" method="post">
+      Starting Price: <input type="text" onkeydown="return isNumber(event)" name="startPrice" required><br> Ending Price: <input type="text" onkeydown="return isNumber(event)" name="endPrice" required><br> Price steps: <input type="text" onkeydown="return isNumber(event)"
+        onkeydown="return isNumber(event)" name="priceStep" required><br> Starting MPG:
+      <input type="text" onkeydown="return isNumber(event)" name="startMPG" required><br> Ending MPG:
+      <input type="text" onkeydown="return isNumber(event)" name="endMPG" required><br> MPG steps: <input type="text" name="MPGStep" required><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!--Placeholder div for the table to go when Javascript creates it-->
+  <div id=Table>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
