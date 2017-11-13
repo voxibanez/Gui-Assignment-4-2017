@@ -1,0 +1,111 @@
+/*
+Name: Tim Barber, Timothy_Barber@student.uml.edu
+Computer Science Department, UMass Lowell Comp.4610, GUI Programming I
+File: give full path on system (use pwd command) Created: 17-oct-2017
+*/
+
+/*
+Style: For Style 1, I seperated the text into elements,
+The titles, the numbers, and the plaintext.
+I created classes for the titles that makes sure they are a uniform color.
+The class for the numbers make the first character (the number) 150% larger,
+and formats the text as red so it will stand out.
+I decided to increase the border radius so the immage would be in the shape of a circle.
+I changed the background of the body to light blue, and I customized the size of the h1, h2, and h3,
+and added a shadow to them as well
+I also added padding to p so it would have some breathing room between the screen
+The indent class I made indents the first word.
+*/
+
+/*Body - Light Blue Background*/
+
+body {
+  background-color: lightblue;
+}
+
+tr:nth-child(1) {
+  background-color: #f2f2f2;
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+}
+
+td:nth-child(1) {
+  background-color: #f2f2f2;
+  font-family: verdana;
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*h1 - verdana font, with a grey shadow) */
+
+h1 {
+  font-family: verdana;
+  font-size: 270%;
+  text-align: center;
+  text-shadow: 2px 1px grey;
+}
+
+/*h2 - verdana font, with a grey shadow) */
+
+h2 {
+  font-family: verdana;
+  font-size: 180%;
+  text-align: center;
+  text-shadow: 2px 1px grey;
+}
+
+/*h3 - verdana font) */
+
+h3 {
+  font-style: italic;
+  font-family: verdana;
+  font-size: 150%;
+}
+
+/*p- 1.5 line spacing, justify align (text that spans multiple lines will line up with eachother)
+left and right padding*/
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 120%;
+}
+
+/*img -  50% border radius (circle shape), centered*/
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/*indent - used to indednt the first word*/
+
+.indent {
+  text-indent: 40px;
+}
+
+/*num - used to format the numbers section of the document*/
+
+.num {
+  font-size: 110%;
+  font-style: italic;
+  color: red;
+}
+
+/*Make the first character of number children 150%*/
+
+.num::first-letter {
+  font-size: 150%;
+}
+
+/*titles - Sets the color to blue*/
+
+.titles {
+  color: blue;
+}
